@@ -16,6 +16,6 @@ jobs:
         uses: Azure/pipleine@v1
         with:
         azure-devops-project-url: https://dev.azure.com/kmtechpal1/AgileProject
-        azure-piple-name: 'Devdemoapp.AnshiGit2'
+        azure-piple-name: 'AnshiWebapp'
         azure-devops-token: ${{ secrets.Azure_Devops_Token }}
         
