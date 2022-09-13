@@ -1,0 +1,21 @@
+﻿name: PiplelineWorkFlow
+on:
+  push:
+     branches:
+         -main
+  pull_request:
+     branches:
+         -main
+
+jobs:
+   build:
+      name: Azure Pileline
+      runs-on: ubuntu-latest
+      steps:
+      - name: Azure Pilpline Action
+        uses: Azure/pipleine@v1
+        with:
+        azure-devops-project-url: https://dev.azure.com/kmtechpal1/AgileProject
+        azure-piple-name: 'Devdemoapp.AnshiGit2'
+        azure-devops-token: ${{ secrets.Azure_Devops_Token }}
+        
